@@ -67,10 +67,11 @@
       color: var(--dark);
     }
 
-    .hero-logo {
-      max-height: 80px;
-      width: auto;
-      margin-bottom: 20px;
+    .main-logo {
+      max-width: 400px;
+      width: 100%;
+      height: auto;
+      margin-bottom: 30px;
     }
 
     .hero p {
@@ -299,10 +300,10 @@
     }
 
     @media (max-width: 768px) {
-      .hero-logo {
-        max-height: 60px;
+      .main-logo {
+        max-width: 280px;
       }
-    }
+    }  
 
     /* Animations */
     @keyframes slideInUp {
@@ -331,7 +332,7 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <img src="logo.png" alt="Farm to Table" class="hero-logo" />
+      <img src="logo.png" alt="Farm to Table" class="main-logo" />
       <p>Experience the journey from seed to plate in this unique hybrid simulation game that combines peaceful farming with exciting restaurant management.</p>
       <a href="#content" class="cta-button">Explore Project</a>
     </div>
