@@ -17,11 +17,11 @@
     }
     .container {
       display: grid;
-      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 1.5fr 1fr;
       grid-template-rows: auto auto;
       gap: 20px;
       padding: 30px;
-      max-width: 1200px;
+      max-width: 1400px;
       margin: auto;
     }
     .section {
@@ -29,6 +29,14 @@
       padding: 20px;
       border-radius: 12px;
       box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      height: 100%;
+    }
+    .poster {
+      grid-row: 1 / span 2;
+      grid-column: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .poster img {
       width: 100%;
@@ -61,36 +69,34 @@
 </head>
 <body>
   <div class="container">
+    <!-- Üst sol -->
     <div class="section">
       <h2>About Us</h2>
-      <p>We are a small game development team from Istanbul Technical University, working on Farm to Table as our graduation project. The team consists of 2 developers and 1 designer, focusing on hybrid simulation experiences.</p>
+      <p>We are a small game development team from Hacettepe University, working on Farm to Table as our graduation project. The team consists of 2 developers and 1 designer, focusing on hybrid simulation experiences.</p>
     </div>
 
+    <!-- Orta (üst + alt) -->
     <div class="section poster">
       <img src="poster.jpg" alt="Farm to Table Poster">
     </div>
 
+    <!-- Üst sağ -->
     <div class="section">
       <h2>Project Description</h2>
-      <p>Farm to Table is a hybrid simulation game that combines peaceful farming mechanics with fast-paced restaurant management. You grow your own ingredients by day and use them to serve customers at night.</p>
+      <p>Farm to Table is a hybrid simulation game that combines peaceful farming mechanics with fast-paced restaurant management. You grow your own ingredients in the morning and use them to serve to your customers in the afternoon.</p>
     </div>
 
-    <div class="section buttons">
-      <h2>Downloadable Binaries</h2>
-      <a href="#">Download for Windows</a>
-      <a href="#">Download for Mac</a>
-    </div>
-
+    <!-- Alt sol -->
     <div class="section video">
       <h2>Gameplay Video</h2>
       <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
     </div>
 
+    <!-- Alt sağ -->
     <div class="section buttons">
-      <h2>Additional Files</h2>
-      <a href="#">Download Poster PDF</a>
-      <a href="#">Final Report</a>
-      <a href="#">itch.io Page</a>
+      <h2>Downloadable Binaries</h2>
+      <a href="#">Download for Windows</a>
+      <a href="#">Download for Mac</a>
     </div>
   </div>
 
