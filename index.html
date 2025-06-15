@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Farm to Table - Project Showcase</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-rows: auto auto;
+      gap: 20px;
+      padding: 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .section {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .poster img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+    }
+    .video iframe {
+      width: 100%;
+      height: 250px;
+      border-radius: 12px;
+      border: none;
+    }
+    .buttons a {
+      display: block;
+      margin-bottom: 10px;
+      padding: 10px 15px;
+      background: #007acc;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      text-align: center;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="section">
+      <h2>About Us</h2>
+      <p>We are a small game development team from Istanbul Technical University, working on Farm to Table as our graduation project. The team consists of 2 developers and 1 designer, focusing on hybrid simulation experiences.</p>
+    </div>
+
+    <div class="section poster">
+      <img src="poster.jpg" alt="Farm to Table Poster">
+    </div>
+
+    <div class="section">
+      <h2>Project Description</h2>
+      <p>Farm to Table is a hybrid simulation game that combines peaceful farming mechanics with fast-paced restaurant management. You grow your own ingredients by day and use them to serve customers at night.</p>
+    </div>
+
+    <div class="section buttons">
+      <h2>Downloadable Binaries</h2>
+      <a href="#">Download for Windows</a>
+      <a href="#">Download for Mac</a>
+    </div>
+
+    <div class="section video">
+      <h2>Gameplay Video</h2>
+      <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" allowfullscreen></iframe>
+    </div>
+
+    <div class="section buttons">
+      <h2>Additional Files</h2>
+      <a href="#">Download Poster PDF</a>
+      <a href="#">Final Report</a>
+      <a href="#">itch.io Page</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Farm to Table Team – All rights reserved
+  </footer>
+</body>
+</html>
